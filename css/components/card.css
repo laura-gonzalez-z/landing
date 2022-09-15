@@ -1,0 +1,139 @@
+.cards {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 30px;
+  justify-content: center;
+}
+.card {
+  background-color: var(--white);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  max-width: 320px;
+  width: 100%;
+  padding: 30px 25px 15px;
+  text-align: center;
+}
+.card img {
+  display: block;
+  height: 150px;
+  margin: 0 auto 15px;
+  max-width: 80%;
+}
+.card-category, .card-product, .card-trip {
+  display: flex;
+  background-color: var(--white);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  max-width: 500px;
+  width: 100%;
+}
+.card-category {
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.card-category a {
+  align-items: center;
+  background-color: rgba(0,0,0,0.3);
+  color: var(--white);
+  display: flex;
+  font-size: 1.75em;
+  font-weight: bold;
+  height: 180px;
+  justify-content: center;
+  padding: 20px;
+  text-decoration: none;
+  width: 100%;
+}
+.card-category a:hover {
+  background-color: rgba(0,0,0,0.5);
+}
+.card-link {
+  color: inherit;
+  font-size: inherit;
+  text-decoration: none;
+}
+.img-square, .img-wide {
+  height: auto;
+  width: 100%;
+}
+.img-square {
+  height: 120px;
+  object-fit: cover;
+  width: 120px;
+}
+.img-wide {
+  height: 220px;
+  object-fit: cover;
+  width: 100%;
+}
+.overlay-link {
+  display: block;
+  position: relative;
+}
+.overlay-link:after {
+  background-color: rgba(0,0,0,0.05);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: all 0.5s ease;
+  width: 100%;
+}
+.overlay-link:hover:after {
+  background-color: rgba(0,0,0,0.2);
+}
+.card-product {
+  align-items: center;
+}
+.card-product-info {
+  flex-grow: 1;
+  padding: 15px;
+}
+.card-product-info h2, .card-trip-info h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+.card-product-info p, .card-trip-info p {
+  font-size: 12px;
+  line-height: 1.35em;
+  margin: 0;
+}
+.card-trip {
+  flex-direction: column;
+}
+.card-trip-info {
+  display: flex;
+  padding: 15px;
+  position: relative;
+}
+.card-trip-info > div {
+  flex-grow: 1;
+}
+.card-trip-info h2 {
+  margin: 0;
+}
+.card-trip-info .card-trip-pricing {
+  padding-top: 10px;
+}
+.card-trip-info .card-trip-user {
+  position: absolute;
+  right: 15px;
+  top: -20px;
+}
+@media screen and (max-width: 920px) {
+  .cards {
+    flex-wrap: wrap;
+  }
+  .card, .card-category, .card-product, .card-trip {
+    box-sizing: border-box;
+    width: 285px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .card, .card-category, .card-product, .card-trip {
+    width: 100%;
+  }
+}

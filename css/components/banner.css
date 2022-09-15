@@ -1,0 +1,22 @@
+.banner {
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
+  padding: 200px 0;
+}
+.banner h1 {
+  color: var(--white);
+  margin-bottom: 0.5em;
+}
+.banner p {
+  font-size: 1.25em;
+}
+.banner .btn-primary {
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 920px) {
+  .banner {
+    padding: 100px 0;
+  }
+}

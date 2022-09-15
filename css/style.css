@@ -1,0 +1,108 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@700');
+/* Fontawesome */
+@import url('https://use.fontawesome.com/releases/v6.1.2/css/all.css');
+
+/* Components */
+@import url("components/avatar.css");
+@import url("components/banner.css");
+@import url("components/button.css");
+@import url("components/card.css");
+
+/* Utilities */
+html {
+  font-size: 16px;
+}
+:root {
+  --white: #fff;
+  --light-beige: #fffcf2;
+  --dark-beige: #ccc5b9;
+  --medium-grey: #403d39;
+  --dark-grey: #252422;
+  --deep-orange: #eb5e28;
+}
+body {
+  background: var(--light-beige);
+  color: var(--medium-grey);
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  color: var(--dark-grey);
+  font-family: 'Poppins', sans-serif;
+  margin: 0 0 0.8em;
+}
+
+p {
+  margin: 0 0 0.8em;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+.text-center {
+  text-align: center;
+}
+.bg-white {
+  background-color: var(--white);
+}
+
+/* Custom design below! */
+.container {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.section {
+  padding: 50px 0;
+}
+#footer {
+  background-color: var(--medium-grey);
+  color: var(--white);
+  padding: 50px 0;
+}
+#footer .social a {
+  color: var(--white);
+  display: inline-block;
+  font-size: 2rem;
+  margin: 0 10px;
+}
+#footer .social a:hover {
+  opacity: 0.8;
+}
+#footer p {
+  color: var(--white);
+  margin: 10px 0;
+}
+.footer-flex {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 800px;
+  }
+}
+@media screen and (max-width: 920px) {
+  .container {
+    width: 600px;
+  }
+  html {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .section {
+    padding: 30px 0;
+  }
+  .container {
+    box-sizing: border-box;
+    padding: 0 20px;
+    width: 100%;
+  }
+}
